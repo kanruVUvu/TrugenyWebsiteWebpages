@@ -1,0 +1,1947 @@
+
+body {
+  font-family: 'Roboto', sans-serif;
+  color:#2c333c;
+}
+/****Author-2-custom-styles****/
+/****cancer-page-styles*******/
+
+/****Banner-Styles*******/
+.cancer-banner-sec-wrap{
+  height: 500px;
+/*  border: solid 1px green;*/
+}
+
+.cancer-banner-sec-wrap .cancer-banner-sec{
+  background: url(./img/cancerpage/Back-new.png) no-repeat center;-webkit-background-size: 100%;
+  background-position:center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+
+
+
+
+.cancer-banner-sec-wrap .cancer-banner-sec .container{
+  height: 500px;
+/*  border: solid 1px red;*/
+  margin-top:0!important;
+
+}
+
+.cancer-banner-sec-wrap .cancer-banner-sec .container h1{
+  font-family: 'Roboto', sans-serif;
+  font-size:3rem;
+  padding-top: 140px;
+  font-weight: bold;
+
+}
+
+.cancer-banner-sec-wrap .cancer-banner-sec .container p{
+  font-size:1.5rem;
+  padding-bottom:195px;
+  color:#2c333c;
+  font-weight:300;
+  max-width:640px;
+  line-height:30px;
+}
+
+@media (min-width: 768px) {
+  .cancer-banner-sec-wrap .cancer-banner-sec .container{
+    padding-left:0px;
+
+  }
+}
+input[type="text"] {
+  font-family:'Roboto', sans-serif;
+  font-size: 16px;
+  color:#84888e;
+}
+.i4{
+  font-size: 14px;
+  font-family: Roboto regular;
+  padding-left:20px;
+  padding-right:20px;
+  background-color:#4f5be7;
+  border-radius:30px;
+}
+.sec1-landing{
+  height:567px;
+}
+.wrapper {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.center {
+display: block;
+margin-left: auto;
+margin-right: auto;
+width: 100%;
+}
+.example1 {
+border: 2px solid red;
+padding: 10px;
+border-radius: 500px;
+width:50%;
+}
+.main-background-page2{
+  background: url(hello.png) no-repeat center center fixed;-webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height:65vh;
+  background-position: top;
+}
+.background-card-page2{
+background: url(page2/card_main_Background.png) no-repeat center center fixed;-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;
+width:100%;
+background-position: top;
+}
+.main-background{
+  background: url(main-banner.png) no-repeat center center fixed;-webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height:100vh;
+  background-position: top;
+}
+.sec6 ul {
+
+  margin: 0;
+  padding: 0;
+}
+.sec6 li {
+  list-style-type: none;
+  position: relative;
+  margin: 0;
+  padding-left: 15px;
+  line-height:1.3;
+  padding-bottom:15px;
+  font-size:1.125rem;
+
+}
+.sec6 li:before {
+  content: "\25BA \0020";
+  color: orange;
+  font-size: 1.39;
+  position: absolute;
+  top: -2px;
+  left: -10px;
+}
+.main-background-2{
+  background: url(banner-bg-2.png) no-repeat center center fixed;-webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-position: top;
+}
+
+.r1{
+border-radius: 2.5rem!important
+
+}
+
+.r2{
+
+border-radius: 150px;
+border: 7px solid #ffffff;
+
+}
+
+.r3{
+border-radius: 4rem!important
+
+}
+/****Author-2-custom-styles****/
+/****heart-page-styles*******/
+
+/****Banner-Styles*******/
+.heart-banner-sec-wrap{
+  height: 500px;
+/*  border: solid 1px green;*/
+}
+
+.heart-banner-sec-wrap .heart-banner-sec{
+  background: url(./heart-img/heart-banner-001.jpg);
+  background-position:center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.heart-banner-sec-wrap .heart-banner-sec .container{
+  height: 500px;
+/*  border: solid 1px red;*/
+  margin-top:0!important;
+
+}
+
+.heart-banner-sec-wrap .heart-banner-sec .container h1{
+  font-family: 'Roboto', sans-serif;
+  font-size:3rem;
+  padding-top: 140px;
+  font-weight: bold;
+
+}
+
+.heart-banner-sec-wrap .heart-banner-sec .container p{
+  font-size:1.5rem;
+  padding-bottom:195px;
+  color:#2c333c;
+  font-weight:300;
+  max-width:640px;
+  line-height:30px;
+}
+
+@media (min-width: 768px) {
+  .heart-banner-sec-wrap .heart-banner-sec .container{
+    padding-left:0px;
+
+  }
+}
+
+/****End of Banner-Styles*******/
+
+/****Heart Disease-Styles*******/
+
+.heart-disease-sec{
+  margin: 0 auto;
+  /*border: solid 1px red;*/
+  padding-top:150px;
+  padding-bottom:150px;
+
+}
+
+.heart-disease-sec .intro-text-wrap{
+  margin: 0 auto;
+  display: block;
+  text-align: center;
+  padding-right:150px;
+  padding-left:150px;
+  padding-bottom:150px;
+
+}
+
+.heart-disease-sec .intro-text-wrap h2{
+  font-size:2.5rem;
+  font-family: 'Roboto', sans-serif;
+  font-weight:bold;
+  max-width:840px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+.heart-disease-sec .row{
+  margin-top: 40px;
+/*  border: solid 1px green;*/
+
+}
+
+.heart-disease-sec .row .hd-img{
+/*  border: solid 1px green;*/
+  margin: 0 auto;
+  text-align: center;
+  width: 315px;
+  height: 300px;
+
+}
+
+.heart-disease-sec .row .hd-img img{
+  margin: 0 auto;
+  display: block;
+}
+
+.heart-disease-sec .row .hd-text{
+/*  border: solid 1px pink;*/
+  padding-top:75px;
+  padding-right:30px;
+  padding-left:30px;
+}
+
+.heart-disease-sec .row .hd-text h3{
+  font-size:1.875rem;
+  font-family: 'Roboto', sans-serif;
+  font-weight:bold;
+  text-align: left;
+  color: #4f5be7;
+/*  border: solid 1px brown;*/
+  padding-bottom:20px;
+  margin-bottom: 0px;
+}
+
+.heart-disease-sec .row .hd-text p{
+  max-width:700px;
+  font-size:1.125rem;
+  font-family: 'Roboto', sans-serif;
+  font-weight:400;
+  text-align: left;
+  padding-top:20px;
+/*  border: solid 1px brown;*/
+  margin-top:0px;
+}
+
+@media (min-width: 768px) {
+  .heart-disease-sec .row .hd-text{
+    padding-left:0px;
+    padding-right:0px;
+  }
+
+  .heart-disease-sec .row .hd-text p{
+    padding-right:20px;
+    margin-top:0px;
+  }
+}
+
+/*** Heart Disease**families-Styles*******/
+
+.heart-disease-sec .families-sec{
+  padding-top:190px;
+
+}
+
+
+.heart-disease-sec .families-sec .row{
+/*  border: solid 1px yellow;*/
+  margin-top:0px;
+}
+
+
+
+.heart-disease-sec .families-sec .row .familes-text{
+  padding-top:75px;
+  padding-right:30px;
+  padding-left:30px;
+/*  border: solid 1px blue;*/
+}
+
+.heart-disease-sec .families-sec .row .familes-text p{
+  max-width:700px;
+  font-size:1.125rem;
+  font-family: 'Roboto', sans-serif;
+  font-weight:400;
+  text-align: left;
+  padding-top:115px;
+/*  border: solid 1px pink;*/
+}
+
+.heart-disease-sec .families-sec .row .families-img{
+/*  border: solid 1px black;*/
+  margin: 0 auto;
+  text-align: center;
+  width: 486px;
+  height: 400px;
+
+}
+
+.heart-disease-sec .families-sec .row .families-img img{
+  margin: 0 auto;
+  display: block;
+
+}
+
+@media (min-width: 768px) {
+  .heart-disease-sec .families-sec .row .familes-text{
+    padding-left:0px;
+    padding-right:0px;
+  }
+
+  .heart-disease-sec .families-sec .row .familes-text p{
+    padding-right:20px;
+    margin-top:0px;
+  }
+}
+
+/*****end of families section******/
+/****End of Heart Disease-Styles*******/
+
+/****End of hd-risks-Styles*******/
+.hd-risks .hd-risks-block{
+ /* border: solid 1px red;*/
+  padding-top:150px;
+}
+
+
+/****lifestyle factors section-Styles*******/
+
+
+.background-lifestyle-card{
+  background: url(heart-img/lifestyle-factors-background.png) no-repeat center;-webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  width:100%;
+  background-position: top;
+}
+
+
+.background-lifestyle-card .lifestyle-card-wrap{
+  padding-top:150px;
+  padding-bottom:150px;
+}
+
+.card-deck .card-deck-wrap .card{
+  height:300px;
+}
+
+.background-lifestyle-card .lifestyle-card-wrap h1{
+  padding-bottom:100px;
+}
+
+.r4{
+border-radius: 2.5rem!important;
+
+}
+
+/*****End of lifestyle factors section******/
+
+/*****genetic risks styles*******/
+
+
+.gr-sec{
+/*  border:solid 1px red;*/
+}
+
+
+.gr-sec .gr-sec-wrap{
+/*  border:solid 1px yellow;*/
+  padding-top:100px;
+  padding-bottom:100px;
+}
+
+
+.gr-sec .gr-sec-wrap .gr-header{
+ /* border:solid 1px black;*/
+  margin:0 auto;
+}
+.gr-sec .gr-sec-wrap .gr-header h1{
+  font-family: 'Roboto black', sans-serif;
+  font-size:2.5rem;
+  margin:0 auto;
+  padding-bottom:10px;
+}
+
+.gr-sec .gr-sec-wrap .gr-header p{
+/*  border:solid 1px black;*/
+  margin:0 auto;
+  font-size:2.25rem;
+  font-family: 'Roboto regular', sans-serif;
+  padding-top:10px;
+}
+
+
+.gr-card-wrap{
+/*  border: solid 1px blue;*/
+}
+
+.gr-card-wrap .gr-card-deck{
+/*  border: solid 1px yellow;*/
+}
+
+.gr-card-body{
+  padding:0;
+}
+
+.gr-card-body .card-top-part{
+/*  border: solid 1px blue;*/
+  background-color: #eff7ff;
+  border-top-left-radius:2rem!important;
+  border-top-right-radius:2rem!important;
+  padding:50px 40px 30px 40px;
+
+}
+
+.gr-card-body .card-top-part p{
+  color: #4f5be7;
+  font-family: 'Roboto', sans-serif;
+  font-weight:700;
+  font-size:1rem;
+  margin-bottom:0;
+
+
+}
+
+.gr-card-body .card-btm-part{
+/*  border: solid 1px pink;*/
+  padding:20px 20px 30px 20px;
+}
+
+
+.gr-card-body .card-btm-part p{
+/*  border: solid 1px pink;*/
+  font-family: 'Roboto', sans-serif;
+  font-weight:400;
+  font-size:1rem;
+  text-align: center;
+}
+
+.learn-btn{
+  margin: 0 auto;
+/*  border:solid 1px red;*/
+  text-align:center;
+}
+
+.learn-btn a{
+  margin: 0 auto;
+  display:block;
+  padding:20px 30px;
+  width: 250px;
+  font-size:0.875rem;
+  text-transform: uppercase;
+  background-color: #4f5be7;
+
+}
+
+.learn-btn p{
+  margin: 0 auto;
+  text-align: center;
+  padding-top:40px;
+  font-family: 'Roboto', sans-serif;
+  font-weight:400;
+  font-size:1.125rem;
+}
+
+
+/*****End of genetic risks styles*******/
+/*****heart condition******/
+
+
+
+.heart-condition-sec{
+  margin: 0 auto;
+ /* border: solid 1px green;*/
+  padding-top:90px;
+  padding-bottom:170px;
+
+}
+
+
+.heart-condition-sec .families-sec{
+
+}
+
+
+.heart-condition-sec .families-sec .row{
+/*  border: solid 1px yellow;*/
+  margin-top:0px;
+}
+
+
+
+.heart-condition-sec .families-sec .row .familes-text{
+  padding-top:75px;
+  padding-right:30px;
+  padding-left:30px;
+/*  border: solid 1px blue;*/
+}
+
+.heart-condition-sec .families-sec .row .familes-text h3{
+  color:#4f5be7;
+  max-width:700px;
+  font-size:1.875rem;
+  font-family:'Roboto', sans-serif;
+  font-weight:bold;
+  text-align: left;
+  padding-bottom:20px;
+  margin:0;
+/*  border: solid 1px pink;*/
+}
+
+.heart-condition-sec .families-sec .row .familes-text p{
+  max-width:700px;
+  font-size:1.125rem;
+  font-family:'Roboto', sans-serif;
+  font-weight:400;
+  text-align: left;
+  margin:0;
+}
+.heart-condition-sec .families-sec .row .familes-text .para-1{
+  padding-top:20px;
+  padding-bottom:15px;
+}
+
+.heart-condition-sec .families-sec .row .familes-text .para-2{
+  padding-top:15px;
+}
+.heart-condition-sec .families-sec .row .families-img{
+/*  border: solid 1px black;*/
+  margin: 0 auto;
+  text-align: center;
+  width: 486px;
+  height: 400px;
+
+}
+
+.heart-condition-sec .families-sec .row .families-img img{
+  margin: 0 auto;
+  display: block;
+
+}
+
+@media (min-width: 768px) {
+  .heart-condition-sec .families-sec .row .familes-text{
+    padding-left:0px;
+    padding-right:0px;
+  }
+
+  .heart-condition-sec .families-sec .row .familes-text p{
+    padding-right:20px;
+    margin-top:0px;
+  }
+}
+
+/*****End of heart condition******/
+
+/****heart condition accordian****/
+
+.heart-accordian-sec{
+ /* border:solid 1px blue;*/
+  background-color: #eff7ff;
+
+}
+
+.heart-accordian-sec .heart-accordian-sec-wrap{
+  /*border:solid 1px pink;*/
+  padding-bottom:100px;
+
+
+}
+
+.heart-accordian-sec .heart-accordian-sec-wrap .accordian{
+  /*border:solid 1px pink;*/
+  padding-bottom:70px;
+
+
+}
+
+.heart-accordian-header{
+  margin: 0 auto;
+/*  border:solid 1px yellow;*/
+  padding-bottom:25px;
+  padding-top:90px;
+
+}
+
+.heart-accordian-header h2{
+  font-family:
+  max-width:700px;
+  font-size:2.5rem;
+  font-family: 'Roboto', sans-serif;
+  font-weight:bold;
+  margin:0 auto;
+/*  border:solid 1px green;*/
+}
+
+.heart-accordian-header .hc-sub-title{
+  font-family:
+  max-width:600px;
+  font-size:1.125rem;
+  font-family: 'Roboto', sans-serif;
+  font-weight:400;
+/*  border:solid 1px red;*/
+}
+
+.hc-accordian-wrap .accordion .card{
+  border:none;
+  background-color:transparent!important;
+  padding-top:25px;
+}
+
+.hc-accordian-wrap .card-header{
+  border-bottom: solid 2px #c8daec;
+  background-color:#fff;
+  padding-left:0px;
+}
+
+
+.hc-accordian-wrap .card .card-body{
+  background-color:#dcf4f4;
+}
+
+
+.hc-accordian-wrap .card-header h5{
+  font-family: 'Roboto black', sans-serif;
+  text-align:left;
+  text-transform: uppercase;
+  font-size:1.5rem;
+  padding-left:0px;
+  color:#4f5be7;
+}
+
+.hc-accordian-wrap .card-header h5 button .fa{
+  text-align:right;
+  font-size:1.375rem;
+  color:#4f5be7;
+}
+
+
+
+
+
+/****end of heart condition accordian****/
+
+
+
+/*****be proactive sec******/
+.be-proactive-sec{
+/*  border:solid 1px red;*/
+  padding-top:130px;
+  padding-bottom:130px;
+}
+
+.be-proactive-sec .be-proactive-img-wrap{
+ /* border:solid 1px green;*/
+
+}
+
+.be-proactive-sec .be-proactive-text{
+  /*border:solid 1px yellow;*/
+  padding-top:40px;
+
+}
+
+.be-proactive-sec .be-proactive-text h3{
+  font-size:2.25rem;
+  font-family: 'Roboto', sans-serif;
+  font-weight:bold;
+  text-align: left;
+  color: #4f5be7;
+/*  border:solid 1px black;*/
+
+}
+
+.be-proactive-sec .be-proactive-text .imp-text{
+  font-size:1.125rem;
+  font-family: 'Roboto', sans-serif;
+  font-weight:bold;
+  text-align: left;
+  /*border:solid 1px cyan;*/
+  padding:40px 0px;
+
+}
+
+/*****end of be proactive sec******/
+
+/***** benifits sec******/
+
+.be-proactive-sec .benifits-img-wrap{
+/*  border:solid 1px green;*/
+  padding-top:100px;
+
+}
+
+.be-proactive-sec .be-proactive-text .imp-text-1{
+  padding-bottom:40px;
+  font-size:1.125rem;
+  font-family: 'Roboto', sans-serif;
+  font-family:400;
+  text-align: left;
+  /*border:solid 1px cyan;*/
+}
+
+.be-proactive-sec .be-proactive-text .imp-text-2{
+  padding-top:30px;
+  padding-bottom:40px;
+  font-size:1.125rem;
+  font-family: 'Roboto', sans-serif;
+  font-weight:bold;
+  text-align: left;
+  /*border:solid 1px cyan;*/
+}
+
+/***** end of benifits sec******/
+
+.what-you-sec{
+  padding-bottom:130px;
+}
+
+.what-you-sec .what-you-sec-header{
+  padding-top:100px;
+  padding-bottom:65px;
+}
+
+.what-you-sec .what-you-sec-header h2{
+  font-size:2.5rem;
+  font-family: 'Roboto black', sans-serif;
+  text-align: left;
+  margin:0;
+  padding-bottom:10px;
+}
+
+.what-you-sec .what-you-sec-header p{
+  margin:0 auto;
+  font-size:1.875rem;
+  font-family: 'Roboto', sans-serif;
+  font-weight:400;
+  text-align: center;
+  color:#2c333c;
+  padding-top:10px;
+
+}
+
+.wyg-card-wrap .card{
+  width:auto;
+  height:500px;
+}
+
+.wyg-img-box{
+  margin: 0 auto;
+  width:auto;
+}
+
+
+.card-1 .wyg-img-box .wyg-img-wrap{
+  display:block;
+  width:180px;
+  height:180px;
+  line-height:150px;
+  border: solid 20px #f2d278;
+  border-radius:50%;
+  background-color: #fff;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.card-2 .wyg-img-box .wyg-img-wrap{
+  display:block;
+  width:180px;
+  height:180px;
+  line-height:150px;
+  border: solid 20px #ebb095;
+  border-radius:50%;
+  background-color: #fff;
+  text-align: center;
+  margin: 0 auto;
+
+}
+
+.card-3 .wyg-img-box .wyg-img-wrap{
+  display:block;
+  width:180px;
+  height:180px;
+  line-height:150px;
+  border: solid 20px #d7cceb;
+  border-radius:50%;
+  background-color: #fff;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.card-4 .wyg-img-box .wyg-img-wrap{
+  display:block;
+  width:180px;
+  height:180px;
+  line-height:150px;
+  border: solid 20px #80dafd;
+  border-radius:50%;
+  background-color: #fff;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.wyg-card-wrap h5{
+  margin:0 auto;
+  font-size:1.5rem;
+  font-family: 'Roboto bold', sans-serif;
+  text-align: center;
+  color:#fff;
+  text-transform: uppercase;
+  padding-bottom:18px;
+  padding-top:30px;
+
+}
+
+.wyg-card-wrap p{
+  margin:0 auto;
+  font-size:1rem;
+  font-family: 'Roboto regular', sans-serif;
+  text-align: center;
+  color:#fff;
+  padding-top:10px;
+
+}
+
+.wyg-card-wrap .card-1{
+  background-color: #eab623;
+}
+.wyg-card-wrap .card-2{
+  background-color: #de7e52;
+}
+.wyg-card-wrap .card-3{
+  background-color: #bdacdf;
+}
+.wyg-card-wrap .card-4{
+  background-color: #2fc2fc;
+}
+
+
+
+.card-1 .wyg-img-wrap  img,
+.card-2 .wyg-img-wrap  img,
+.card-3 .wyg-img-wrap  img{
+  display:block;
+  height: auto;
+  width: 70px;
+  margin: 0 auto;
+  margin-top: 40px;
+}
+
+.card-4 .wyg-img-wrap  img{
+  display:block;
+  height: auto;
+  width: 70px;
+  margin: 0 auto;
+  margin-top: 20px!important;
+}
+
+/****End of what-you get? styles*******/
+/****Inherited Heart Accordian styles*******/
+
+
+.inherited-accordian-sec{
+ /* border:solid 1px blue;*/
+  background-color: #eff7ff;
+  margin-top:85px;
+
+}
+
+.inherited-accordian-sec .inherited-accordian-sec-wrap{
+/*  border:solid 1px pink;*/
+  padding-bottom:100px;
+
+
+}
+
+.inherited-accordian-sec .inherited-accordian-sec-wrap .accordian{
+  /*border:solid 1px pink;*/
+  padding-bottom:70px;
+
+
+}
+
+.inherited-accordian-header{
+  margin: 0 auto;
+  padding-bottom:25px;
+  padding-top:90px;
+
+}
+
+.inherited-accordian-header h2{
+  font-size:2.5rem;
+  font-family: 'Roboto black', sans-serif;
+  font-weight:bold;
+  margin:0 auto;
+  padding-bottom:15px;
+}
+
+.inherited-accordian-header .ia-sub-title{
+  font-family:
+  font-size:1.125rem;
+  font-family: 'Roboto', sans-serif;
+  font-weight:400;
+  margin: 0 auto;
+  padding-top:0px;
+  max-width:900px;
+  text-align: center;
+}
+
+.inherited-accordian-sec-wrap h4{
+  font-family:
+  max-width:600px;
+  font-size:1.875rem;
+  font-family: 'Roboto', sans-serif;
+  font-weight:700;
+  color:#4f5be7;
+}
+
+.hc-accordian-wrap .accordion .card{
+  border:none;
+  background-color:transparent!important;
+  padding-top:25px;
+}
+
+.hc-accordian-wrap .card-header{
+  border-bottom: solid 2px #c8daec;
+  background-color:#fff;
+  padding-left:0px;
+}
+
+
+.hc-accordian-wrap .card .card-body{
+  background-color:#dcf4f4;
+}
+
+.hc-accordian-wrap .card-header h5{
+  font-family: 'Roboto black', sans-serif;
+  text-align:left;
+  text-transform: uppercase;
+  font-size:1.5rem;
+  padding-left:0px;
+  color:#4f5be7;
+}
+
+.hc-accordian-wrap .card-header h5 button .fa{
+  text-align:right;
+  font-size:1.375rem;
+  color:#4f5be7;
+}
+
+/****End of inherited Heart accordianstyles*******/
+/****useful-resources-pill styles*******/
+
+.useful-resources-sec{
+/*  border: solid 1px red;*/
+  padding-top:75px;
+  padding-bottom:130px;
+}
+
+.useful-resources-sec .ur-header-wrap{
+
+}
+
+.useful-resources-sec .ur-header-wrap h2{
+/*  border: solid 1px cyan;*/
+  font-size:2.5rem;
+  font-family: 'Roboto black', sans-serif;
+  text-align: center;
+  margin:0;
+  padding-top:75px;
+  padding-bottom:65px;
+
+}
+
+.useful-resources-sec .ur-pill-wrap{
+/*  border: solid 1px blue;*/
+  margin:0 auto;
+
+}
+
+.useful-resources-sec .ur-pill .rounded-pill{
+/*  border: solid 1px blue;*/
+  margin:0 auto;
+  width: 250px !important;
+}
+
+.useful-resources-sec .ur-pill-wrap .pill-1 .ur-link{
+/*  border: solid 1px blue;*/
+  background-color:#eab623;
+  border: none;
+  display:block;
+  text-align:center;
+
+}
+
+.useful-resources-sec .ur-pill-wrap .pill-2 .ur-link{
+/*  border: solid 1px blue;*/
+  background-color:#de7e52;
+  border: none;
+  display:block;
+  text-align:center;
+
+}
+
+.useful-resources-sec .ur-pill-wrap .pill-3 .ur-link{
+/*  border: solid 1px blue;*/
+  background-color:#bdacdf;
+  border: none;
+  display:block;
+  text-align:center;
+
+}
+
+.useful-resources-sec .ur-pill-wrap .pill-4 .ur-link{
+/*  border: solid 1px blue;*/
+  background-color:#2fc2fc;
+  border: none;
+  display:block;
+  text-align:center;
+
+}
+
+.useful-resources-sec .ur-pill-wrap .ur-link .ur-img-wrap{
+/*  border: solid 1px green;*/
+  display: block;
+}
+
+.useful-resources-sec .ur-pill-wrap .ur-link .ur-img-wrap img{
+  display: block;
+  height:100px;width:100px;
+}
+.useful-resources-sec .ur-pill-wrap .ur-link .ur-link-title{
+/*  border: solid 1px blue;*/
+  font-size:1rem;
+  text-transform: uppercase;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  color:#fff;
+  display:inline-block;
+  text-align:left;
+  margin-top:30px;
+  padding-left:10px;
+  line-height:18px;
+
+}
+
+/****End of useful-resources-pill styles*******/
+
+/****what my genes have to say styles*******/
+
+.genes-say-sec{
+/*  border:solid 1px red;*/
+  padding-bottom: 100px;
+  padding-top:100px;
+}
+
+
+.genes-say-sec .gs-sec-wrap{
+/*  border:solid 1px yellow;*/
+}
+
+.genes-say-sec .gs-sec-wrap .genes-say-header{
+/*  border:solid 1px blue;*/
+  margin: 0 auto;
+
+}
+
+.genes-say-sec .gs-sec-wrap .genes-say-header h2{
+/*  border:solid 1px blue;*/
+  margin: 0 auto;
+  font-size:2.5rem;
+  font-family: 'Roboto black', sans-serif;
+  text-align:center;
+}
+
+
+.gs-card-wrap .card-body{
+  background-color:#eff7ff;
+  border-bottom-left-radius:4rem!important;
+  border-bottom-right-radius:4rem!important;
+}
+
+.gs-card-wrap .card-body p{
+  font-family: 'Roboto', sans-serif;
+  text-align:center;
+  font-weight:400;
+  font-size:1.125rem;
+
+}
+
+
+.gs-card-wrap .card-1  img{
+  height:300px;
+  width:200px;
+}
+
+.gs-card-wrap .wrapper button{
+  height:60px;
+  width:210px;
+  border-radius:30px;
+  background-color: #4f5be7;
+}
+
+/****End of what my genes have to say styles*******/
+
+/****heart-page-styles-end-here*******/
+/****risk-summary-styles-start-here*******/
+
+/* navbar */
+.risk-nav{
+  margin-top: 40px;
+
+}
+.risk-nav .nav-menu {
+  padding: 30px;
+  transition: all .7s;
+}
+
+.risk-nav .navbar-nav{
+  width:70%;
+}
+
+.risk-nav .nav-item{
+  padding-right:20px;
+  padding-left:20px;
+}
+
+.risk-nav .menu-item {
+  display:inline-block;
+  font-size: 0.875rem;
+  letter-spacing: 1px;
+  color: #2c333c;
+  transition: color .5s;
+  text-align:center;
+  padding-right:25px;
+  padding-left:25px;
+
+}
+
+.risk-nav .menu-item:hover {
+  color: #4f5be7;
+}
+
+.risk-nav .nav-active{
+  display:inline-block;
+  color:#4f5be7;
+  background-color: #eff7ff;
+  border-radius: 10px;
+  font-weight:900;
+  padding: 10px 25px;
+}
+
+.line1, .line2, .line3 {
+  width: 23px;
+  height: 3px;
+  margin: 5px;
+  transition: all .4s;
+  background-color: #4f5be7;
+  border-color: #4f5be7;
+}
+
+.change .line1 {
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.change .line2 {
+  opacity: 0;
+}
+
+.change .line3 {
+  transform: rotate(45deg) translate(-5px, -6px);
+}
+
+/*.custom-navbar {
+  padding: 5px 30px;
+
+}*/
+
+.help-btn-wrap{
+  padding:10px;
+  width: 125px;
+  margin-left:35px;
+
+}
+.help-btn-wrap a{
+  display:block;
+  padding:10px 15px;
+  text-align:center;
+  color:#2c333c;
+}
+
+.login-name-wrap a{
+  display:block;
+  padding:10px;
+  text-align:center;
+  color:#2c333c;
+  text-decoration: none;
+  text-transform: none;
+  font-size:1.125rem;
+  font-family: 'Roboto', sans-serif;
+  text-align:left;
+  padding-left:40px;
+}
+.login-name-wrap .fa-chevron-down{
+  font-size:0.75rem;
+  text-align:left;
+  padding-left:5px;
+  color:#84888e;
+}
+
+/* end of navbar */
+/* prev-next button styles */
+
+.slide-buttons-wrap{
+}
+
+.slide-buttons-wrap .slide-buttons{
+}
+
+.slide-buttons-wrap .prev-button{
+  left:-48px;
+  top:230px;
+}
+
+.slide-buttons-wrap .next-button{
+  right:-48px;
+  top:230px;
+}
+
+.slide-buttons-wrap a{
+  font-size: 2.1875rem;
+  width:3.125rem;
+  height:4rem;
+  text-align:center;
+  background-color: #f3f4f4;
+  color:#4f5be7;
+  line-height: 3.5rem ;
+}
+
+.slide-buttons-wrap .prev-button a{
+  border-top-left-radius: 25px;
+  border-bottom-left-radius: 25px;
+}
+
+.slide-buttons-wrap .next-button a{
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+}
+
+
+/* end of prev-next button styles */
+/*  risk summary card */
+
+.risk-summery-sec{
+  padding-top:80px;
+  padding-bottom:80px;
+/*  border:solid 1px red;*/
+  width:100%;
+  margin: 0 auto;
+}
+
+.risk-summery-sec .rs-sec-wrap{
+
+}
+
+.risk-summery-sec .rs-main-card{
+  border-radius: 2.5rem!important;
+  padding-bottom:50px;
+  margin:0 auto;
+  width:100%;
+}
+
+.rs-sec-wrap .card .card-header{
+  border-top-left-radius:2.5rem!important;
+  border-top-right-radius:2.5rem!important;
+  background-color: #fff!important;
+}
+
+.rs-sec-wrap .card .rs-header {
+  border-top-left-radius:2.5rem!important;
+  border-top-right-radius:2.5rem!important;
+
+}
+
+.rs-sec-wrap .card .rs-header h2{
+  font-family: 'Roboto', sans-serif;
+  font-size:2.25rem;
+  text-align:left;
+  font-weight:900;
+}
+
+.rs-sec-wrap .card .rs-header span{
+  font-family: 'Roboto', sans-serif;
+  font-size:1.5rem;
+  color:#4f5be7;
+  text-align:left;
+  font-weight:bold;
+
+}
+
+.rs-sec-wrap .rs-nav{
+  padding-top: 50px;
+}
+
+.rs-sec-wrap .rs-nav li.nav-item a{
+  font-family: 'Roboto', sans-serif;
+  font-size:1rem;
+  color:#4f5be7!important;
+  font-weight:400;
+  text-decoration-line: underline;
+
+}
+
+.rs-sec-wrap .rs-nav li.nav-item a span{
+  display:inline-block;
+  padding-left: 5px;
+}
+
+.rs-sec-wrap .rs-nav li.nav-item a i{
+  font-size:1rem;
+  color:#4f5be7!important;
+  padding-right:5px;
+}
+
+.rs-sec-wrap .card-body .cb-head{
+  background-color: #eff7ff;
+}
+
+.rs-sec-wrap .card-body .card-title{
+  font-family: 'Roboto', sans-serif;
+  font-size:2.25rem;
+  text-align:left;
+  font-weight:900;
+}
+
+.rs-sec-wrap .card-body .card-text{
+  font-family: 'Roboto', sans-serif;
+  font-size:1.125rem;
+  text-align:left;
+  font-weight:400;
+}
+
+.card-body .cb-sec-one{
+/*  border: solid 1px green;*/
+}
+
+.card-body .cb-sec-one .rs-img-wrap{
+  width:15%;
+  padding-right:10px;
+}
+
+
+.card-body .cb-sec-one-text{
+  width:85%;
+  padding-left:10px;
+  text-align:left;
+}
+
+.card-body .cb-sec-one-text h5{
+  font-family: 'Roboto', sans-serif;
+  font-size:1.5rem;
+  text-align:left;
+  font-weight:bold;
+  padding-top:10px;
+  padding-bottom:15px;
+  margin-bottom: 0px;
+}
+
+.card-body .cb-sec-one-text p{
+  font-family: 'Roboto', sans-serif;
+  font-size:1.125rem;
+  text-align:left;
+  font-weight:400;
+  padding-top:15px;
+  padding-bottom:20px;
+}
+
+.card-body .cb-sec-one-text a{
+  font-family: 'Roboto', sans-serif;
+  font-size: 0.875rem;
+  font-weight:bold;
+  color:#fff;
+  background-color: #4f5be7!important;
+  padding:1.25rem 1.875rem;
+
+}
+
+.rs-sec-wrap .seperatorline{
+  background-color: #c8daec;
+  height:2px!important;
+  width:95%;
+  margin:0 auto;
+}
+
+/***footer-styles******/
+
+.footer-sec .footer-wrap p{
+font-family: 'Roboto', sans-serif;
+font-size: 0.875rem;
+font-weight:bold;
+color: #73787e;
+}
+
+.footer-sec .social-links li a{
+  font-size: 1rem;
+  color: #73787e;
+}
+
+.rs-footer-baseline{
+  color:#73787e;
+}
+
+
+/***end of footer-styles******/
+/* end of risk summary card */
+/* details card */
+
+.dv-block-wrap{
+  margin-top: 20px;
+}
+
+.dv-block-wrap .dv-closebutton{
+  border:solid 1px #4f5be7;
+  color:#4f5be7;
+  width:2.125rem;
+  height:2.125rem;
+  border-radius: 50%;
+  font-size: 2.125rem;
+  opacity: 1;
+}
+
+.dv-block-wrap .dv-nav{
+/*  border:solid 1px red;*/
+  padding-bottom:0px;
+}
+
+.dv-block-wrap .dv-nav li{
+  padding: 15px;
+}
+
+/*.dv-block-wrap .dv-nav li:first-child{
+  padding-left: 0px;
+}*/
+
+.dv-block-wrap .dv-nav li:last-child{
+  padding-right: 0px;
+}
+
+.dv-block-wrap .dv-nav a{
+  font-family: 'Roboto', sans-serif;
+  font-size: 0.875rem;
+  font-weight:400;
+  color:#2c333c;
+  text-transform:uppercase;
+  padding:0;
+
+}
+
+.dv-block-wrap .dv-nav a.nav-active{
+  font-family: 'Roboto', sans-serif;
+  font-size: 0.875rem;
+  font-weight:400;
+  color:#4f5be7;
+  text-transform:uppercase;
+  border-bottom:solid 2px #4f5be7;
+  padding-bottom:20px;
+}
+
+.dv-accordian-wrap .accordion .card{
+  border:none;
+  background-color:transparent!important;
+  padding-top:60px;
+}
+
+.dv-accordian-wrap .card-header{
+  border-bottom: solid 3px #c8daec;
+  background-color:#fff;
+  padding-left:0px;
+}
+
+.dv-accordian-wrap .card .card-body{
+  background-color:#f3fbfb;
+}
+
+
+.dv-accordian-wrap .card-header h5{
+  font-family: 'Roboto', sans-serif;
+  font-weight:bold;
+  text-align:left;
+  text-transform: none;
+  font-size:1.5rem;
+  padding-left:0px;
+  color:#2c333c;
+}
+
+.dv-accordian-wrap .card-body p{
+  font-family: 'Roboto', sans-serif;
+  text-align:left;
+  color:#2c333c;
+  font-size:1.125rem;
+}
+
+.dv-accordian-wrap .card-header h5 button .fa{
+  text-align:right;
+  font-size:22px;
+  color:#2c333c;
+}
+
+.dv-accordian-wrap .dv-hq-card-body a{
+  text-align:center;
+  font-family: 'Roboto', sans-serif;
+  font-size: 0.875rem;
+  font-weight:bold;
+  color:#fff;
+  background-color: #4f5be7!important;
+  padding:10px;
+  margin-bottom:50px;
+  width:150px;
+  display:block;
+}
+
+.genetic-right-header{
+  padding-top:20px;
+}
+
+.genetic-right-header p{
+  text-align:left;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.125rem;
+  font-weight:bold;
+  padding-left:15px;
+}
+
+.gt-body .gt-nav{
+  padding-left:60px;
+}
+
+/* end of details card */
+/* genetic counselling card */
+
+/*.gc-sec-wrap .gc-sec .gc-img-wrap{
+  width:100%;
+
+}*/
+
+.gc-sec-wrap .gc-sec .gc-img-wrap img{
+  width:100%;
+  margin:0 auto;
+
+}
+
+/*.gc-sec-wrap .gc-sec .gc-text{
+  width:%;
+
+}*/
+
+.gc-sec .gc-text .gc-text-subhead{
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.125rem;
+  font-weight:bold;
+}
+
+.gc-sec-wrap .gc-sec .gc-text a{
+  padding:10px 20px;
+  display:inline-block;
+}
+
+.gc-sec-wrap .gc-sec .gc-text a i{
+  font-size:1rem;
+  text-align:left;
+  padding-left:10px;
+  text-align: center;
+}
+
+
+
+/* end of genetic counselling card */
+/* faqscard */
+
+.is-active{
+  color:#000!important;
+}
+
+.faq-accordian-wrap .accordion .card{
+  border:none;
+  background-color:transparent!important;
+  padding-top:60px;
+}
+
+.faq-accordian-wrap .card-header{
+  border-bottom: solid 3px #c8daec;
+  background-color:#fff;
+  padding-left:0px;
+}
+
+.faq-accordian-wrap .card .card-body{
+  background-color:#f3fbfb;
+}
+
+
+.faq-accordian-wrap .card-header h5{
+  font-family: 'Roboto', sans-serif;
+  font-weight:900;
+  text-align:left;
+  text-transform: none;
+  font-size:1.5rem;
+  padding-left:0px;
+  color:#4f5be7;
+}
+
+.faq-accordian-wrap .card-header .default-header{
+  color:#2c333c;
+}
+
+
+
+.faq-accordian-wrap .card-header .faq-title{
+  font-family: 'Roboto', sans-serif;
+  font-weight:bold;
+  text-align:left;
+  text-transform: none;
+  font-size:1.5rem;
+  color:#2c333c;
+}
+
+.faq-accordian-wrap .card-body p{
+  font-family: 'Roboto', sans-serif;
+  text-align:left;
+  color:#2c333c;
+  font-size:1.125rem;
+  text-align:left;
+}
+
+.faq-accordian-wrap .card-header h5 button .fa{
+  text-align:right;
+  font-size:22px;
+  color:#4f5be7;
+}
+
+.fa-minus-circle{
+  color:#2c333c!important;
+}
+
+
+/* end of faqs card */
+/* next-steps-card */
+
+
+.next-steps-wrap{
+ /* border:solid 1px red;*/
+}
+
+.next-steps-wrap .ns-header{
+/*  border:solid 1px yellow;*/
+  padding-top:50px;
+  padding-bottom:40px;
+}
+
+.next-steps-wrap .ns-header h5{
+/*  border:solid 1px blue;*/
+  font-family: 'Roboto', sans-serif;
+  font-weight:bold;
+  text-align:left;
+  font-size:1.5rem;
+  padding-bottom:10px;
+}
+
+.next-steps-wrap .ns-header .ns-text{
+/*  border:solid 1px red;*/
+  font-family: 'Roboto', sans-serif;
+  font-weight:normal;
+  text-align:left;
+  font-size:1.125rem;
+  padding-top:10px;
+}
+
+.next-steps-wrap .ns-card-container{
+/*  border:solid 1px pink;*/
+  padding-top:20px;
+}
+
+.ns-card-container .ns-main-title{
+  margin:0 auto;
+  padding-bottom:40px;
+/*  border:solid 1px red;*/
+}
+
+.ns-card-container h2{
+  font-family: 'Roboto', sans-serif;
+  font-weight:bold;
+  text-align:center;
+  font-size:2.25rem;
+  padding-top:40px;
+  margin:0 auto;
+  padding-bottom:40px;
+
+}
+
+.next-steps-wrap .ns-card-container .ns-card-wrap{
+/*  border:solid 1px blue;*/
+  margin-bottom: 30px;
+}
+
+.ns-card-wrap .card-body{
+/*  border:solid 1px black;*/
+  height:auto;
+  text-align: center;
+  margin:0 auto;
+}
+
+.ns-card-wrap .card-body .card-top{
+/*  border:solid 1px red;*/
+  background-color: #f7e8c0;
+  margin:0;
+  padding:0px;
+  border-top-left-radius: 2.5rem;
+  border-top-right-radius: 2.5rem;
+  text-align: center;
+}
+
+.ns-card-wrap .card-body .card-top .card-title{
+  font-family: 'Roboto', sans-serif;
+  font-weight:bold;
+  text-align:center;
+  text-transform: none;
+  font-size:1.125rem;
+  padding-top:30px;
+  margin:0;
+
+}
+
+.ns-card-wrap .card-body .card-top .card-number{
+  font-family: 'Roboto', sans-serif;
+  font-weight:bold;
+  text-align:center;
+  text-transform: none;
+  font-size:3rem;
+  color:#EAB624;
+
+}
+
+.ns-card-wrap .card-body .card-btm{
+  border-bottom-left-radius: 2.5rem;
+  border-bottom-right-radius: 2.5rem;
+/*  border:solid 1px cyan;*/
+  margin:0;
+  padding:10px;
+  text-align:center;
+  height:13rem;
+}
+
+.ns-card-wrap .card-body .card-text{
+/*  border:solid 1px green;*/
+  font-family: 'Roboto', sans-serif;
+  font-weight:normal;
+  text-align:center;
+  font-size:1rem;
+  margin:0;
+  text-align:center;
+  padding-bottom: 10px;
+}
+
+
+
+.ns-card-wrap .card-body .pos-btm{
+  border-bottom-left-radius: 2.5rem;
+  border-bottom-right-radius: 2.5rem;
+/*  border:solid 1px cyan;*/
+  margin:0;
+  padding:10px;
+  text-align:center;
+  height:10rem;
+}
+
+.ns-card-container .pos-header h2{
+  font-family: 'Roboto', sans-serif;
+  font-weight:bold;
+  text-align:center;
+  font-size:2.25rem;
+  padding-top:40px;
+  margin:0 auto;
+  padding-bottom:20px;
+
+}
+
+
+/**general recommendations styles**/
+
+.gen-recommend-wrap{
+/*  border:solid 1px red;*/
+  background-color: #eff7ff;
+  margin-top:40px;
+  padding-bottom: 40px;
+}
+
+.gen-recommend-wrap .gen-rec-main-title h2{
+  font-family: 'Roboto', sans-serif;
+  font-weight:bold;
+  text-align:center;
+  font-size:2.25rem;
+  padding-top:80px;
+  margin:0 auto;
+  padding-bottom:40px;
+}
+
+
+.gen-recommend-wrap .gr-columns{
+  padding-bottom: 40px;
+}
+
+.gen-recommend-wrap .gr-columns .gr-column-img-wrap{
+  padding:0px;
+}
+
+.gen-recommend-wrap .gr-columns .gr-column-img-wrap img{
+  display:block;
+  width:100%;
+  margin:0 auto;
+}
+
+.gen-recommend-wrap .gr-columns .gr-cloumn-text-wrap p{
+  font-family: 'Roboto', sans-serif;
+  font-weight:normal;
+  text-align:center;
+  font-size:1.125rem;
+}
+
+.gen-rec-footer-wrap .gen-rec-footer-title{
+  padding-top: 40px;
+  padding-bottom: 20px;
+}
+
+.gen-rec-footer-wrap .gen-rec-footer-title h5{
+  font-family: 'Roboto', sans-serif;
+  font-weight:bold;
+  text-align:center;
+  font-size:1.5rem;
+  color:#4f5be7;
+}
+
+.gen-rec-footer-wrap .gen-rec-footer-text{
+  font-family: 'Roboto', sans-serif;
+  font-weight:normal;
+  text-align:center;
+  font-size:1.125rem;
+  color:#2c333c;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+/**end of general recommendations styles**/
+/* end of next-steps-card */
+
+.your-risks-wrap{
+  padding-top:0px!important;
+}
+
+.your-risks-wrap .ns-header{
+/*  border:solid 1px yellow;*/
+  padding-bottom:40px;
+}
+
+.your-risks-wrap .ns-header h5{
+/*  border:solid 1px blue;*/
+  font-family: 'Roboto', sans-serif;
+  font-weight:bold;
+  text-align:left;
+  font-size:1.5rem;
+  padding-top:50px;
+  padding-bottom:10px;
+}
+
+.your-risks-wrap .ns-header .ns-text{
+/*  border:solid 1px red;*/
+  font-family: 'Roboto', sans-serif;
+  font-weight:normal;
+  text-align:left;
+  font-size:1.125rem;
+  padding-top:10px;
+}
+
+
+.your-risks-wrap .yr-graph-sec{
+  background-color: #eff7ff;
+  padding:50px;
+}
+
+.your-risks-wrap .yr-graph-wrap{
+
+}
+
+/*.your-risks-wrap .yr-graph-1{
+  padding-bottom:25px;
+}
+
+.your-risks-wrap .yr-graph-2{
+  padding-top:25px;
+}*/
+
+/* eour-risks-card */
+/* end of your-risks-card */
+
+/****Author-2-custom-styles-ends-here****/

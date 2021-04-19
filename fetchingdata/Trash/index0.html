@@ -1,0 +1,857 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&amp;subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext,vietnamese"
+    rel="stylesheet">
+  <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+    integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
+    crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="./fonts/fontawesome-free-5.8.2-web/css/all.css" rel="stylesheet"type="text/css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+    crossorigin="anonymous">
+  <title>TrueGene</title>
+  <link rel="icon" href="./img/Logo.png" type="image/gif" sizes="16x16">
+  <link rel="stylesheet" href="stylesheet_custom.css">
+  <link rel="stylesheet" href="./css/stylesheet_custom.css">
+  <link rel="stylesheet" href="./css/header_footer.css">
+  <link rel="stylesheet" href="./css/fonts.css">
+  <link rel="stylesheet" href="./css/sticky.css">
+
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+
+
+  <!-- <script src="./js/index.js"></script> -->
+  <style>
+  body {
+    font-family: 'roboto', sans-serif;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+  /* Button used to open the contact form - fixed at the bottom of the page */
+
+  .open-button {
+    background-color: #4f5be7;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    opacity: 0.8;
+    z-index: 100;
+    position: fixed;
+    bottom: 23px;
+    right: 28px;
+    width: 150px;
+    /* top: 415px; */
+    /* z-index:1000; */
+  }
+
+  .cyan-shw {
+    /* Style for "Background" */
+    box-shadow: 0 17px 40px rgba(222, 126, 82, 0.9);
+    border-radius: 40px;
+    background-color: #de7e52;
+  }
+  /* The popup form - hidden by default */
+
+  .form-popup {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    right: 15px;
+    border: 3px solid #f1f1f1;
+    z-index: 9;
+  }
+  /* Add styles to the form container */
+
+  .form-container {
+    max-width: 300px;
+    padding: 10px;
+    background-color: white;
+  }
+  /* Full-width input fields */
+
+  .form-container input[type=text],
+  .form-container input[type=password] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background: #f1f1f1;
+  }
+  /* When the inputs get focus, do something */
+
+  .form-container input[type=text]:focus,
+  .form-container input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+  }
+  /* Set a style for the submit/login button */
+
+  .form-container .btn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom: 10px;
+    opacity: 1;
+  }
+  /* Add a red background color to the cancel button */
+
+  .form-container .cancel {
+    background-color: #4f5be7;
+  }
+  /* Add some hover effects to buttons */
+
+  .form-container .btn:hover,
+  .open-button:hover {
+    opacity: 1;
+  }
+
+  .textbox-submit-footer {
+    border: solid 1px #ebebeb;
+    /* width:6 rem;" */
+  }
+
+  .container {
+    /* border:1px solid red; */
+    margin: 0 auto;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+  </style>
+
+
+</head>
+
+<body>
+
+
+  <!-- sticky form---------------- -->
+
+  <div class="row ">
+
+    <div class="nb-form">
+      <!-- <p class="title d-none d-lg-block ">May I Help You</p> -->
+
+      <img src="chat.gif" alt=""class="user-icon img-fluid">
+
+      <form>
+        <input type="text" name="cpname" placeholder="Name:" required>
+        <input type="email" name="cpemail" placeholder="Email:" required>
+        <input type="tel" name="cpphone" placeholder="Phone:" required>
+        <textarea name="cpmessage" placeholder="Message:" required></textarea>
+        <input type="submit" value="Send message" style="background:#4f5be7">
+      </form>
+    </div>
+  </div>
+
+  <!-- --------eo sticky form----------------- -->
+  <!-- <div class="main-container"> -->
+  <!-- <button class="open-button" onclick="openForm()">Contact Us</button> -->
+
+  <!-- <div class="form-popup" id="myForm" >
+      <form action="insert.php" class="form-container" method="post">
+        <button type="button" class="close" aria-label="Close" onclick="closeForm()">
+          <span aria-hidden="true">&times;</span>
+        </button        <label for="email"><b>Email</b></label>
+        <input type="text" placeholder="Enter Email" name="email" required>
+        <label for="email"><b>Phone number</b></label>
+        <input type="text" placeholder="Enter Phone number" name="email" required>
+
+        <label for="psw"><b>Type here</b></label>
+        <input type="text" placeholder="Enter your query" name="psw" required>
+
+        <button type="submit" class="btn" name="submit">submit</button>
+        <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+      </form>
+    </div> -->
+
+  <!-- <script>
+    function openForm() {
+      document.getElementById("myForm").style.display = "block";
+    }
+
+    function closeForm() {
+      document.getElementById("myForm").style.display = "none";
+    }
+    </script> -->
+
+  <div class="main-background your-Destiny px-2 ">
+    <!-- <strong> -->
+    <header>
+      <!-- navbar -->
+      <nav class="main-nav  container navbar navbar-expand-lg  nav-menu">
+        <a class="navbar-brand " href="index.html"><img class="" src="./img/Logo.png" width="150" height="90" /></a>
+        <button class="navbar-toggler nav-button" type="button" data-toggle="collapse" data-target="#myNavbar">
+          <div class=" line1"></div>
+          <div class=" line2"></div>
+          <div class=" line3"></div>
+        </button>
+        <div class="main-navbar-collapse collapse navbar-collapse text-center  justify-content-end text-uppercase"
+          id="myNavbar">
+
+          <ul class="main-navbar-nav navbar-nav">
+            <li class="nav-item">
+              <a href="#" class="nav-link m-2 menu-item ">About</a>
+            </li>
+            <li class="nav-item">
+              <a href="index.html" class="nav-link m-2 menu-item nav-active">for individuals</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link m-2 menu-item">for clinicians</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link m-2 menu-item">HELP</a>
+            </li>
+
+          </ul>
+          <div class="signin-register">
+            <ul>
+              <li>
+                <a class="signinRegisterBtn" id="signin" href="signIn.html">Sign in</a>
+                <span>|</span>
+                <a class="signinRegisterBtn" id="register" href="create_registration.html">Register</a>
+              </li>
+            </ul>
+          </div>
+          <!-- end of signin-register-->
+          <div class="book-button">
+            <button type="button " class=" btn btn-primary rounded-pill">
+              <a href="#">Book your test</a>
+            </button>
+          </div>
+          <!-- end of book-button -->
+        </div>
+
+      </nav>
+      <!-- end of navbar -->
+
+    </header>
+
+
+    <h1 class="text-center  banner-text-h1 mx-auto ">Your DNA is not your Destiny</h1>
+    <h4 class="text-center banner-text-h4-1 mx-auto" style="font-weight: 300;">Almost all diseases have a genetic component to them.<br> Learn what your genes say about your risk for developing <br>certain diseases.</h4>
+    <h4 class="text-center  text-black banner-text-h4-2 mx-auto" style="font-weight: 700;">Take control of your health destiny.</h4>
+    <br>
+    <!-- <p class="text-center mt-1"><button class="text-white btn11-learn btn btn-outline-primary" type="submit" onclick="window.location.href = 'index.html#section-1';"   ><b>LEARN MORE</b></button></p> -->
+
+
+    <p class="text-center mt-1 d-none d-lg-block">
+      <button class="text-center custom-button btn btn-outline-primary btn-hover-white mt-2 my-sm-0"
+        onclick="window.location.href = 'index.html#section-1';" href="https://github.com/lipis/sweetalert" onclick="_gaq.push(['_trackEvent', 'exit', 'main', 'GitHub']);" type="submit"><b>LEARN MORE</></button></p>
+
+
+
+
+</div>
+<!-- <div id="contactform">
+  <div id="contact-button">
+    <div class="rotated-text">Contact</div>
+  </div>
+  <form>
+    <input type="text"/><input type="text"/><input type="text"/>
+    <textarea row="6" col="5"></textarea>
+  </form>
+</div> -->
+
+<!-- ------------------------------------------------1st section over---------------------------------------------- -->
+<div class=" d-md-block one-two-sec-padding">
+
+
+</div>
+<section id="section-1 ">
+
+  <div class="container homepage-sec2">
+    <div class="row">
+      <div class="col-sm mt-sm-5 pt-5">
+        <img class="img-fluid" src="./img/homepage/Illu_1.png" />
+      </div>
+      <div class="col-sm mt-0 ">
+        <h2 class="roboto-black-30 pt-5" >You inherit a lot from your family, including your HEALTH</h2>
+
+        <p class="roboto-reg-18px"style="color:#2c333c;padding-top:23px">Genes are passed on from a parent to the child. A child gets one set of
+           genes from the father and one set from the mother. Genes control the way you look, the way your body works and genes are what
+            makes you unique. Genes can also increase the risk in a family for developing certain diseases such as cancers, heart conditions amongst many others.
+          </p>
+        <p class="roboto-reg-18px"style="color:#2c333c;">Learning about your genes can help you better understand your risks and take actions for preventing diseases and leading a healthier life.</p>
+
+      </div>
+
+    </div>
+  </div>
+
+</section>
+<!-- ------------------------------------2nd sec end--------------------------------------- -->
+<div class="d-sm-none d-md-none d-lg-block one-two-sec-padding">
+
+  <!-- divition for padding -->
+
+</div>
+<!-- ------------------------------------3rd sec statted--------------------------------------- -->
+
+<div class="container  mb-5 ">
+  <h2 class="text-center roboto-black-36px"   >There are 7 Billion people on this planet.</h2>
+  <h2 class="text-center roboto-reg-36px"  >There’s ONE you</h2>
+</div>
+<div class="container text-center mt-5">
+  <img class="img-fluid mt-5 mb-5" src="./img/homepage/Illu _2.png" />
+</div>
+
+
+<!-- ----------------------------------------------------3rd end----------------------------------- -->
+
+<div class="container  mb-5 my-5">
+<h2 class="text-center roboto-black-36px"  style="padding-bottom: 40px">How do you beat your odds of developing a chronic disease?</h2>
+<h2 class="text-center roboto-black-36px"  >truGene empowers you</h2>
+
+  <h2 class="text-center roboto-reg-36px"  >with knowledge about your genes</h2>
+</div>
+
+<!-- --------------------------------------------------------------------------------------------------------------- -->
+
+<div class="container mb-5 my-5 sec6 mt-5 pt-5 pb-5 px-4">
+  <div class="row">
+    <div class="col-sm">
+      <h2 class="roboto-black-30"style="padding-bottom:30px"><strong>Expert genetic guidance</strong></h2>
+      <h3 class="roboto-reg-18px">A genetic counselling session with our genetic counsellors can help you:</h3>
+                    <ul class="roboto-reg-18px">
+                          <li >Understand your risk based on your family history or a genetic test result</li>
+                          <li>Determine if genetic testing is a good option for you</li>
+                          <li>Choose the right genetic test</li>
+                          <li>Understand your results</li>
+                          <li class="pb-4" id="li"> Make the most informed decisions for a healthier longer life.</li>
+
+                    </ul>
+
+                    <button  class="custom-button btn btn-outline-primary my-2 my-sm-0 btn-hover-white" onclick="window.location.href = 'genetic-counselling.html';" type="submit" ><b>LEARN MORE</></button>
+
+    </div>
+    <div class="col-sm pt-5">
+      <img class="center img-fluid" src="./img/homepage/Illu_4.png" />
+
+    </div>
+
+  </div>
+</div>
+
+
+<!-- ------------------------------------5thth sec end--------------------------------------- -->
+<section id="buy-truegene">
+<div class="main-background-2  px-0">
+  <div class="container  pt-3">
+
+    <h2 class="text-center roboto-black-40px pt-3" >truGene brings you a new kind of DNA TEST</strong></h2>
+    <h2 class="text-center roboto-med-30px pt-3" style="font-weight: 500;" ><b>Be PROACTIVE about your health.</h2></b>
+        <h3 class="text-center roboto-reg-18px pt-3">Discover DNA insights that will help you take actions for a healthier life. Whether you are
+        wanting to learn about your health risks or worried about what genetic conditions you might pass on to your kids,
+         truGene's unique DNA testing methodology helps you learn more about yourself than ever before.</h3>
+  </div>
+
+  <div class="container mt-5 pt-5">
+
+    <div class="card-deck  ">
+      <div class="col-sm  text-center card rounded shadow-lg p-3  bg-white  r2 r3">
+
+        <div class="card-block mt-4 pb-2  mb-3 circle">
+          <img class="card-img-top img-fluid text-center mt-2 p-2 " src="./img/homepage/cancer-round.png"
+            style="height:160px;width:160px;" alt="Card image cap">
+        </div>
+        <div class="card-body  mb-5 pb-5  text-center">
+          <h4 class="card-title roboto-bold-30px pb-5 mb-4 pt-3"><b>Cancer Test</b></h4>
+          <h3 class="card-text roboto-reg-18px">A detailed analysis of your genes to help you learn your risks for developing cancers of the breast, ovarian, uterine, colorectal, prostrate, pancreatic and stomach cancers.</h3>
+          <br>
+          <p class="text-center ">
+            <button class="custom-button btn btn-outline-primary my-2 my-sm-0 btn-hover-white"
+              onclick="window.location.href = 'cancer.html';" type="submit">LEARN MORE</button>
+          </p>
+
+        </div>
+      </div>
+
+      <div class=" col-sm text-center card rounded shadow-lg p-3  bg-white  r2 r3">
+
+        <div class="card-block mt-4 pb-2  mb-3 circle">
+          <img class="card-img-top img-fluid text-center mt-2 p-2 " src="./img/homepage/heart-card.png"
+            style="height:160px;width:160px;" alt="Card image cap">
+        </div>
+        <div class="card-body  text-center mb-5 pb-5">
+
+          <h4 class="card-title roboto-bold-30px pb-5 mb-4 pt-3"><b>Cardiac Test</b></h4>
+          <h3 class="card-text roboto-reg-18px ">A detailed analysis of over 90 genes to understand your risks for developing heart conditions such as familial hypercholestrolemia, cardiomyopathy, Arrythmia etc.</h3>
+          <br>
+          <br>
+          <p class="text-center ">
+            <button class="custom-button btn btn-outline-primary my-2 my-sm-0 btn-hover-white"
+              type="submit" onclick="window.location.href = 'heart.html';">LEARN MORE</button>
+          </p>
+        </div>
+      </div>
+    </div>
+
+
+  </div>
+
+  </section>
+
+
+
+
+
+
+
+  <div class="d-sm-none d-md-none d-lg-block one-two-sec-padding">
+
+    <!-- divition for padding -->
+
+  </div>
+  </div>
+  <!-- ---------------------------------- -->
+
+  <!-- ******************what you get-sec************ -->
+
+      <section class="our-process-sec">
+        <div class="container our-process-sec-header ">
+          <h2 class="text-center" >What do you GET?</h2>
+          <p class="punchline">It starts with a conversation</p>
+        </div><!-- eo what-you-sec-wrap -->
+
+        <div class="container op-card-wrap text-center">
+          <div class="card-deck">
+            <div class="splitter col-sm-12 col-md-6 col-lg-6 col-xl-3 ">
+              <div class="card card-1 rounded  shadow-lg p-1 mx-0 mb-5 r4">
+              <div class="card-body  text-center ">
+                <span class="card-number op-no-1">1</span>
+                <div class=" op-img-box  " >
+                  <span class="op-img-wrap ">
+                    <img class="card-img-top text-center" src="heart-img/calender-icon.png" alt="Card image cap">
+                  </span>
+                </div>
+                <h5 class="card-title">Schedule An Appointment</h5>
+                <p>It’s fast and easy to do online, and your personal information will always be kept confidential and protected</p>
+              </div>
+            </div><!-- eo card -->
+            </div><!-- eo splitter -->
+
+
+            <div class="splitter col-sm-12 col-md-6 col-lg-6 col-xl-3">
+               <div class="card card-2 rounded shadow-lg p-1 mx-0 mb-5 r4">
+              <div class="card-body  text-center ">
+                <span class="card-number op-no-2">2</span>
+                <div class=" op-img-box" >
+                  <span class="op-img-wrap">
+                    <img class="card-img-top text-center" src="heart-img/call-out-icon.png" alt="Card image cap">
+                  </span>
+                </div>
+                <h5 class="card-title">Initial consultation </h5>
+                <p>We review your personal health history, answer your questions, and, if you are interested, help you select and order the right tests</p>
+              </div>
+            </div><!-- eo card -->
+            </div><!-- eo splitter -->
+
+            <div class="splitter col-sm-12 col-md-6 col-lg-6 col-xl-3 ">
+               <div class="card card-3 rounded  shadow-lg p-1 mx-0 mb-5 r4">
+              <div class="card-body  text-center">
+                <span class="card-number op-no-3">3</span>
+                <div class=" op-img-box" >
+                  <span class="op-img-wrap">
+                    <img class="card-img-top text-center" src="heart-img/sample-collection.png" alt="Card image cap">
+                  </span>
+                </div>
+                <h5 class="card-title">sample collecion</h5>
+                <p>If you decide to have testing, we will ship you a collection kit or schedule a blood draw at a time and place convenient to you or your family</p>
+              </div>
+            </div><!-- eo card -->
+            </div><!-- eo splitter -->
+
+            <div class="splitter col-sm-12 col-md-6 col-lg-6 col-xl-3">
+               <div class="card card-4 rounded  shadow-lg p-1 mx-0 mb-5 r4">
+              <div class="card-body  text-center">
+                <span class="card-number op-no-4">4</span>
+
+                <div class=" op-img-box  " >
+                  <span class="op-img-wrap">
+                    <img class="card-img-top text-center" src="heart-img/results-icon.png" alt="Card image cap">
+                  </span>
+                </div>
+                <h5 class="card-title">results consultation</h5>
+                <p>A genetic counselor reviews your test results, walks you trough their implications in a telehealth session, and answers your questions</p>
+              </div>
+            </div><!-- eo card -->
+            </div><!-- eo splitter -->
+
+          </div><!-- eo wyg-card-deck -->
+        </div><!-- eo wyg-card-wrap -->
+      </section><!-- eo of what-you-sec -->
+
+
+
+  <!-- ******************End of what you get-sec************ -->
+
+
+
+  <section class="ayr-sec-main heart-disease-sec-main">
+    <div class="ayr-sec-main-wrap heart-disease-sec-main-wrap container">
+      <div class="intro-text-wrap text-center">
+        <h2 class="text-center ">Help Us to help you</h2>
+      </div>
+      <!-- eo-intro-text-wrap-->
+      <div class="families-sec heart-disease-sec row container">
+        <div class=" hd-img col-xs-12 col-sm-12 col-md-6 mb-md-0 mb-sm-5 mb-xs-5 text-center align-self-center ">
+          <img class="img-fluid mx-auto" src="./img/cancerpage/Illustrationg.png" />
+        </div>
+        <!-- eo-hd-img -->
+        <div class=" col-xs-12 col-sm-12 col-md-6 mt-md-0 mt-sm-5 mt-xs-5 hd-text align-self-center ">
+          <h3>Start your journey to better health</h3>
+          <p class="heartdisease-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+            veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+            ea commodo</p>
+
+          <button type="button" class="btn btn-outline-primary btn-hover-white rounded-pill"
+            data-toggle="modal" data-target="#exampleModalCenter">Am I Eligible<i class="fas fa-long-arrow-alt-right"></i>
+          </button>
+
+        </div>
+        <!-- eo-hd-text -->
+      </div>
+      <!-- eo-row -->
+
+    </div>
+    <!-- eo-heart-disease-sec-main-wrap-->
+  </section>
+
+
+
+  <!-- ;border:solid 1px red; -->
+
+  <footer class="footer-main-wrap px-5">
+    <div class="container  ">
+
+      <h2 class="text-center" style="padding-bottom: 40px;padding-top:100px"><strong>Schedule your Genetic Counselling Session</strong></h2>
+
+      <h3 class="text-center roboto-reg-18px">Lorem ipsum dolor sit amet, consectetur adipisicing elit,</h3>
+      <h3 class="text-center roboto-reg-18px" style="" ;> sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </h3>
+
+    </div>
+
+
+
+    <form class="gc-form needs-validation" action="insert2.php"  method="post" validate>
+              <div class="form-row justify-content-center">
+                <div class="gc-col  col-md-5 mb-3" for="validationTooltip01">
+                  <div class="input-group ">
+                    <input type="text" class="form-control m-0" id="validationTooltip01" placeholder="Name" name="name" required>
+                    <div class="valid-tooltip">
+                    Looks good!
+                    </div>
+                    <div class="input-group-prepend border-0">
+                      <span class="input-group-text border-0" id="validationTooltip01"><img src="img/homepage/i1.png"/></span>
+                    </div>
+                  </div>
+                </div>
+                <div class="gc-col col-md-5 mb-3">
+                  <div class="input-group">
+                    <input type="text" class="form-control m-0" id="validationTooltip02" placeholder="Reason" name="reason" required>
+                    <div class="valid-tooltip">
+                    Looks good!
+                    </div>
+                    <div class="input-group-prepend">
+                      <span class="input-group-text" id="validationTooltip02"><img src="img/homepage/i2.png"/></span>
+                    </div>
+                  </div>
+                </div>
+              </div><!-- end of form-row -->
+              <div class="form-row justify-content-center">
+                <div class=" gc-col col-md-5 mb-3">
+                  <div class="input-group">
+                    <input type="email" class="form-control m-0" id="validationTooltipEmailPrepend" placeholder="E-mail ID" name="email" aria-describedby="validationTooltipEmailPrepend" required>
+                    <div class="invalid-tooltip">
+                      Please enter a valid E-mail ID.
+                    </div>
+                    <div class="input-group-prepend">
+                      <span class="input-group-text" id="validationTooltipEmailPrepend"><img src="img/homepage/i3.png"/></span>
+                    </div>
+                  </div>
+                </div>
+                <div class="gc-col col-md-5 mb-3">
+                  <div class="input-group">
+                    <input type="text" class="form-control m-0" id="validationTooltip03" placeholder="Referred by" name="refered" aria-describedby="validationTooltip03" required>
+                    <div class="valid-tooltip">
+                      Looks good!
+                    </div>
+                    <div class="input-group-prepend">
+                      <span class="input-group-text" id="validationTooltip03"><img src="img/homepage/i4.png"/></span>
+                    </div>
+                  </div>
+                </div>
+
+              </div><!-- end of form-row -->
+              <div class="form-row justify-content-center">
+                <div class="gc-col col-md-5 mb-3">
+                  <div class="input-group">
+                    <input  class="form-control m-0" type="tel" id="validationTooltip05" placeholder="Phone number" name="phone" pattern="[0-9]{10}" required>
+                  <div class="invalid-tooltip">
+                    Please provide a 10 digit Phone number.
+                  </div>
+                    <div class="input-group-prepend">
+                      <span class="input-group-text" id="validationTooltip05"><img src="img/homepage/i5.png"/></span>
+                    </div>
+                  </div>
+                </div>
+                <div class="gc-col col-md-5 mb-3">
+                  <div class="input-group">
+                    <textarea class="form-control m-0 " id="validationTextarea" rows="1" name="message" placeholder="Message" required></textarea>
+                  </div>
+                </div>
+              </div><!-- end of form-row -->
+
+             <div class="wrapper pt-3 mt-4 mb-5" >
+              <button name="submit" class="center-block btn btn-outline-primary btn-hover-white my-2 my-sm-0 center" style="height:60px;width:210px;border-radius:30px;" type="submit"><b>Schedule Now</b></button>
+              <!-- <a onclick="Swal.fire('Data Submitted Successfully!','You clicked the button!','success');" class="roboto-bold-14px text-center btn btn-primary pr-5 pl-5 mr-5 mx-auto p-3" data-toggle="modal" href='index.html'><i class="fa fa-fw fa-plus"></i>INFO@TRUGENE.COM</a> -->
+
+              </div>
+            </form>
+
+            </div>
+
+          <!--Grid row-->
+        </div>
+
+
+        <!-- ----------form eo-------------- -->
+        <div class="footer-main container text-left border-top pt-3">
+          <div class="row py-5 justify-content-between">
+            <div class="footer-content-main align-self-center col-lg-4 col-xs-6">
+              <div class="logo-wrap pb-2">
+                <a class="navbar-brand " href="index.html"><img class="" src="./img/Logo.png" width="150" height="90" /></a>
+              </div>
+              <!-- end of logo-wrap -->
+              <p class="footer-content pt-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                ex ea commodo consequat.</p>
+            </div>
+            <div class="footer-links-wrap col-md-6 offset-lg-3 col-lg-1 col-xs-6 ">
+              <h5 class="pb-3">Links</h5>
+              <ul class="list-unstyled">
+                <li>
+                  <a href="#" class="footer-link">Lorem</a>
+                </li>
+                <li>
+                  <a href="#" class="footer-link ">Ipsum</a>
+                </li>
+                <li>
+                  <a href="#" class="footer-link ">Dolor</a>
+                </li>
+                <li>
+                  <a href="#" class="footer-link ">Sit amet</a>
+                </li>
+              </ul>
+            </div>
+            <!-- end of cloumns -->
+            <div class="footer-links-wrap col-lg-1 col-md-6  col-xs-6">
+              <h5 class="pb-3">Links</h5>
+              <ul class="list-unstyled">
+                <li>
+                  <a href="#" class="footer-link ">Lorem</a>
+                </li>
+                <li>
+                  <a href="#" class="footer-link ">Ipsum</a>
+                </li>
+                <li>
+                  <a href="#" class="footer-link ">Dolor</a>
+                </li>
+                <li>
+                  <a href="#" class="footer-link ">Sit amet</a>
+                </li>
+              </ul>
+            </div>
+            <!-- end of cloumns -->
+
+
+
+            <div class="footer-links-wrap col-lg-1 col-md-6  col-xs-6">
+              <h5 class="pb-3">Contact</h5>
+              <ul class="list-unstyled">
+                <li>
+                  <a href="#" class="footer-link ">Lorem</a>
+                </li>
+                <li>
+                  <a href="#" class="footer-link ">Ipsum</a>
+                </li>
+                <li>
+                  <a href="#" class="footer-link ">Dolor</a>
+                </li>
+              </ul>
+            </div>
+            <!-- end of cloumns -->
+
+            <div class="footer-links-wrap col-lg-1 col-md-6 col-xs-6">
+              <h5 class="pb-3">Follow</h5>
+              <ul class="list-unstyled">
+                <li>
+                  <a href="#" class="footer-link ">Lorem</a>
+                </li>
+                <li>
+                  <a href="#" class="footer-link ">Ipsum</a>
+                </li>
+                <li>
+                  <a href="#" class="footer-link ">Dolor</a>
+                </li>
+              </ul>
+            </div>
+            <!-- end of cloumns -->
+          </div>
+          <!-- end of row -->
+          <div class="row ">
+            <div class="footer-copyright text-center col-sm-12 col-md-6 text-md-left border-top pt-3">
+              <a>&copy; 2019 TruGene, Inc.</a>
+            </div>
+
+            <div class=" text-center col-sm-12 col-md-6  text-md-right border-top pt-3 footer-legal-links">
+              <ul>
+                <li>
+                  <a class="legalLinkBtn" id="signin" href="javascript:void(0)">Terms of Service</a>
+                  <span>|</span>
+                  <a class="legalLinkBtn" id="register" href="javascript:void(0)">Privacy Policy</a>
+                </li>
+              </ul>
+            </div>
+            <!-- end of signin-register-->
+          </div>
+          <!-- end of row -->
+        </div>
+        <!-- end of container fluid row -->
+  </footer>
+  <!-- end of footer -->
+
+  <div class="modal fade bd-example-modal-lg" id="exampleModalCenter" tabindex="-1"
+    role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+      <div class="modal-content" style="border-radius:40px;">
+
+        <div class="modal-header bg-blue clearfix border-0" style="border-top-right-radius: 40px;    border-top-left-radius: 40px;">
+
+          <h5 class="modal-title" id="exampleModalLongTitle" style="padding-top:5px;padding-bottom:25px;color: #2c333c;font-size: 30px;font-weight: 700;">
+          Start your journey in 3 easy steps</h5>
+
+          <button type="button" class="text-center close" data-dismiss="modal" aria-label="Close"
+            style="padding-top:25px;padding-bottom:25px;">
+            <img class="img-fluid" src=".\img\registration\X.png" />
+          </button>
+
+          <!-- <p class="float-left">Question 1 of 3</p> -->
+        </div>
+
+        <div class="bg-blue border-bottom-1">
+          <p class="pl-3">Question 1 of 3</p>
+        </div>
+
+        <div class="modal-body pb-5 pt-0 m-0">
+
+          <div class="container ">
+            <br>
+            <div class="tab-content">
+              <div id="home" class="container tab-pane active">
+                <br>
+                <h3>How do you indentify your gender?</h3>
+                <hr>
+                <div class="d-flex d-flex-inline">
+                  <img class="mr-3" src="./img/q&a/female.png" alt="" />
+                  <img class="mr-3" src="./img/q&a/female.png" alt="" />
+                </div>
+                <div class="float-right pt-2 mt-2">
+                  <button type="button" class="btn btn-outline-primary text-center custom-button btn btn-outline-primary btn-hover-white my-2 my-sm-0"
+                    data-toggle="pill" href="#menu1">Next</button>
+                </div>
+              </div>
+
+
+              <div id="menu1" class=" m-0 p-0 container tab-pane fade">
+                <br>
+                <h3>Does anyone in your family have 2 diabetes?</h3>
+                <hr>
+                <h4>Certain ethnic groups have higher risk for diabetes,<br>
+      even at lower body weights.</h4>
+                <div class="col-xs-12 mt-2 ">
+                  <div class="input-group-prepend " style="border:solid 1px #ebebeb;max-width:312px">
+                    <input type="text" placeholder="Select your ethnicity" class="form-control roboto-reg-16px"
+                      style="border:none;height:60px;" aria-label="Text input with dropdown button">
+                    <button class="m-0 p-0 btn btn-outline-secondary roboto-bold-14px " href="#" style="border:none;background-color:white;"
+                      type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img class="m-0 p-0" src="img/q&a/carot.png" /></button>
+                  </div>
+                </div>
+                <div class="float-right pt-2 mt-2">
+                  <button type="button" class="btn btn-outline-primary text-center custom-button btn btn-outline-primary btn-hover-white my-2 my-sm-0"
+                    data-toggle="pill" href="#menu2">Next</button>
+                </div>
+              </div>
+
+
+              <div id="menu2" class=" m-0 p-0 container tab-pane fade">
+                <br>
+                <h3>Does anyone in your family have 2 diabetes?</h3>
+                <hr>
+                <div class="radio">
+                  <label>
+                    <input type="radio" name="optradio" checked> Parents</label>
+                </div>
+                <div class="radio">
+                  <label>
+                    <input type="radio" name="optradio"> Siblings</label>
+                </div>
+                <div class="float-right pt-2 mt-2">
+                  <button type="button" class="btn btn-outline-primary text-center custom-button btn btn-outline-primary btn-hover-white my-2 my-sm-0"
+                    data-toggle="pill" onclick="window.location.href = 'thankyou2.html';"
+                    href="#">Submit</button>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+
+
+
+        <!-- sticky form---------------- -->
+
+
+
+        <!-- <div class="modal-footer">
+        <button type="button" class="btn btn-secondary"  data-toggle="pill" href="#menu2">Close</button>
+        <button type="button" class="btn btn-primary"  data-toggle="pill" href="#menu1">Next</button>
+      </div> -->
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+  <script src="./js/main.js"></script>
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
+</body>
+
+</html>

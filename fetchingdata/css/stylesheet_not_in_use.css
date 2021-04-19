@@ -1,0 +1,44 @@
+/*
+  Theme Name: trueGene
+  Theme URL: https://abravelab.com
+  Author: ravi thakur
+  License:MIT
+*/
+
+/*--------------------------------------------------------------
+# General
+--------------------------------------------------------------*/
+
+body {
+  /* background: #fff;
+  color: #444; */
+  font-family: 'Roboto', sans-serif;
+
+}
+
+
+/* -------------------landingpage css------------------------- */
+.r3{
+  border-radius: 2rem!important;
+
+
+}
+  .r2{
+height:320px;
+width:290px;
+  border-radius: 150px;
+  border: 4px solid #ffffff;
+
+}
+
+.sec1-landing{
+  height:567px;
+}
+.card-icon-shadow{
+height: 64px;
+width: 64px;
+left: 40%;
+top: -20px;
+border-radius: 100%;
+background: #b3d7ff;
+}

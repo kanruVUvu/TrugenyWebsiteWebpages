@@ -1,0 +1,623 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+   <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous"> -->
+   <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+<link rel="stylesheet" href="./fonts/fontawesome-free-5.8.2-web/css/all.css" rel="stylesheet"type="text/css">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>truGeny</title>
+    <link rel="icon" href="https://blog.trugeny.com/img/Logo.png" type="image/gif" sizes="16x16">
+    
+    <!-- <link rel="stylesheet" href="./style-mobile2.css" > -->
+    
+<style>
+    body{
+        font-family: 'Roboto', sans-serif;
+    }
+    @media only screen and (min-width: 576px) {
+       /* hide it elsewhere */
+    .stickme{
+        display:none;
+      }
+    }
+    /***footer-styles******/
+    .list-unstyled {
+    line-height: 2.5;
+    }
+.footer-sec .footer-wrap p{
+font-family: 'Roboto', sans-serif;
+font-size: 0.875rem;
+font-weight:bold;
+color: #73787e;
+}
+
+.footer-sec .social-links li a{
+  font-size: 1rem;
+  color: #73787e;
+  font-family: 'Roboto', sans-serif;
+}
+
+.rs-footer-baseline{
+  color:#73787e;
+  font-family: 'Roboto', sans-serif;
+}
+
+
+/***end of footer-styles******/
+    .nb-form {
+    position: fixed;
+    z-index: 9999;
+    width: 300px;
+    background: #FFF;
+    right: 20px;
+    bottom: -450px;
+    transition: all .8s cubic-bezier(.22, .67, .43, 1.22) .2s;
+    border-radius: 10px 10px 0 0;
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14),0 1px 5px 0 rgba(0,0,0,0.12),0 3px 1px -2px rgba(0,0,0,0.2);
+}
+.nb-form:hover {
+    bottom: 0px;
+}
+
+/*-- User Icon --*/
+
+.nb-form .user-icon {
+    position: absolute;
+    top: -120px;
+  right: 42px;
+    display: block;
+    width: 58px;
+    margin: 20px auto 15px;
+    border-radius: 100%;
+}
+
+/*-- Title --*/
+
+.nb-form .title {
+  background: #4f5be7;
+    /* background: #03a9f4; */
+    font-size: 16px !important;
+    padding: 20px 18px !important;
+    color: #fff !important;
+    border-radius: 10px 10px 0 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+/*-- Text --*/
+
+.nb-form p {
+    font-size: 13px;
+    margin: 0;
+    padding: 15px;
+    color: #666;
+    font-family: 'Roboto', sans-serif;
+}
+
+.nb-form p.message {
+    margin-left: 7px;
+}
+
+/*-- Form Elements --*/
+
+.nb-form form {
+    padding: 0 15px 15px 15px;
+}
+
+.nb-form input,
+.nb-form textarea {
+    font-family: Tahoma, Geneva, sans-serif;
+    font-size: 12px;
+    width: 254px;
+    max-width: 254px;
+    margin-bottom: 10px;
+    margin-left: 7px;
+    padding: 6px;
+    border: none;
+    border-radius: 4px;
+    color: #999;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.nb-form input:focus,
+.nb-form textarea:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.nb-form input[type='submit'] {
+    display: block;
+    width: 120px;
+    margin: 0 auto;
+    padding: 0 20px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all .4s ease;
+    color: #fff !important;
+    border: none;
+}
+
+.nb-form input[type='submit']:hover {
+    box-shadow: 0 3px 3px 0 rgba(0,0,0,0.07),0 1px 7px 0 rgba(0,0,0,0.02),0 3px 1px -1px rgba(0,0,0,0.1);
+}
+
+.nb-form textarea {
+    min-height: 110px;
+}
+
+
+.nb-form ::-webkit-input-placeholder {
+    color: #ccb0b0;
+}
+
+.nb-form ::-moz-placeholder{
+    color: #ccb0b0;
+}
+
+.nb-form :-ms-input-placeholder {
+    color: #ccb0b0;
+}
+
+.nb-form :-moz-placeholder {
+    color: #ccb0b0;
+}
+
+.nb-form input[type='submit'] {
+    background: #03a9f4;
+}
+
+@media screen and (max-width: 256px) {
+    .nb-form:hover .user-icon {
+        display: none;
+    }
+
+    .nb-form .message {
+        display: none;
+    }
+
+    .nb-form form {
+        padding-top: 15px;
+    }
+    .nb-form{
+        right: 50%;
+        bottom: -320px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+
+    .dv-closebutton {
+        border: solid 1px #4f5be7;
+        color: #4f5be7;
+        width: 2.125rem;
+        height: 2.125rem;
+        border-radius: 50%;
+        font-size: 2.125rem;
+        opacity: 1;
+      }
+    }
+    @media (max-width: 576px){
+.footer-link {
+    color: #2c333c!important;
+    font-size: 14px!important;
+    transition: all .3s!important;
+    font-family: 'Roboto', sans-serif;
+}
+.stickme .img-fluid {
+    max-width: 70%;
+    height: auto;
+}
+.list-unstyled {
+    line-height: 2.0;
+}
+}
+/* footer */
+
+.footer-main-wrap{
+/*  border: solid 1px blue;*/
+  background-color: #eff7ff;
+  font-family: 'Roboto', sans-serif;
+}
+
+.footer-main{
+/*  border: solid 1px red;*/
+}
+
+.footer-content-main{
+}
+
+.footer-content{
+
+  font-weight: normal;
+  font-size: 1.125rem;
+}
+
+.footer-main h5{
+  font-weight: bold;
+  font-size: 1.125rem;
+  text-transform: uppercase;
+  font-family: 'Roboto', sans-serif;
+}
+
+.footer-links-wrap{
+  padding-top:80px;
+  display:block;
+  font-family: 'Roboto', sans-serif;
+}
+
+.footer-links-wrap li{
+  padding-bottom:10px;
+}
+
+.footer-link {
+  color: #2c333c;
+  font-size: 1rem;
+  transition: all .3s;
+  font-family: 'Roboto', sans-serif;
+
+}
+
+.footer-link:hover {
+  color: #4f5be7;
+  text-decoration: none;
+  font-family: 'Roboto', sans-serif;
+}
+
+.footer-legal-links ul{
+  margin:0;
+  font-family: 'Roboto', sans-serif;
+}
+
+.footer-legal-links ul li{
+  padding:0;
+  list-style-type: none;
+  text-decoration: none;
+
+}
+
+.footer-legal-links ul li a{
+  display:inline-block;
+  font-weight:normal;
+  font-size:1rem;
+  padding:0;
+  margin:0 auto;
+  color:#2c333c!important;
+  text-decoration: none;
+  text-align: center;
+  transition: color .5s;
+  font-family: 'Roboto', sans-serif;
+}
+
+.footer-legal-links ul li a:hover{
+  color:#4f5be7!important;
+  transition: color .5s;
+}
+
+.footer-legal-links ul li span{
+  display: inline-block;
+  color:#2c333c!important;
+  padding:0px 10px;
+
+}
+
+.img-size-custom{
+   height:70px!important;
+   width:120px!important;
+}
+
+/* end of footer */
+</style>
+
+  </head>
+
+  <body >
+
+            <!-- Footer Links -->
+
+            <div style="margin-top:80vh"></div>
+
+            <footer class="footer-main-wrap  pt-5">
+              <div class="footer-main container text-left ">
+            <div class="d-flex d-flex-inline">
+              <div class="col-lg-4 col-sm-0 d-none d-lg-block">
+                <div class="logo-wrap pb-2">
+                  <a class="navbar-brand " href="index.html"><img class="" src="https://trugeny.com/img/Logo.png" width="150" height="90" /></a>
+                </div>
+                <!-- end of logo-wrap -->
+                <!-- <p class=" pt-3"></p> -->
+              </div>
+            
+            
+              <div class="col-lg-2 col-sm-0 d-none d-lg-block">
+                <!-- <div class="logo-wrap pb-2"> -->
+                  <!-- <a class="navbar-brand " href="index.html"><img class="" src="./img/Logo.png" width="150" height="90" /></a> -->
+                <!-- </div> -->
+                <!-- end of logo-wrap -->
+                <!-- <p class=" pt-3"></p> -->
+              </div>
+              <div class="col-lg-2 col-sm-3">
+                <div class="logo-wrap pb-2">
+                  <h5 class="pb-3">About</h5>
+                  <ul class="list-unstyled">
+                    <li>
+                      <a href="#" class="footer-link ">Blog</a>
+                    </li>
+                    <!-- <a href="#" class="footer-link ">Mission</a> -->
+                    <li>
+                    </li>
+                    <li>
+                      <!-- <a href="#" class="footer-link ">Customer Care</a> -->
+                    </li>
+                    <li>
+                      <!-- <a href="#" class="footer-link ">Careers</a> -->
+                    </li>
+                  </ul>
+                </div>
+                <!-- end of logo-wrap -->
+                <!-- <p class=" pt-3"></p> -->
+              </div>
+              <div class="col-lg-2 col-sm-3">
+                <div class="logo-wrap pb-2">
+                  <h5 class="pb-3">Connect</h5>
+                  <ul class="list-unstyled ">
+                    <li>
+                      <a href="#" class="footer-link ">facebook</a>
+                    </li>
+                    <li>
+                      <a href="#" class="footer-link ">linkedin</a>
+                    </li>
+                    <li>
+                      <a href="#" class="footer-link ">twitter</a>
+                    </li>
+                    <li>
+                      <a href="#" class="footer-link ">instagram</a>
+                    </li>
+                  </ul>
+                </div>
+                <!-- end of logo-wrap -->
+                <!-- <p class=" pt-3"></p> -->
+              </div>
+              <div class="col-lg-2 col-sm-3">
+                <div class="logo-wrap pb-2">
+                  <h5 class="pb-3">Legal</h5>
+                  <ul class="list-unstyled">
+                    <li>
+                      <a href="termsofservices.html" class="footer-link ">Privacy Policy</a>
+                    </li>
+                    <li>
+                      <a  href="termsofservices.html" class="footer-link ">Terms of Service</a>
+                    </li>
+                    <li>
+                      <a href="#" class="footer-link ">Consent for Research</a>
+                    </li>
+                  </ul>
+                </div>
+                <!-- end of logo-wrap -->
+                <!-- <p class=" pt-3"></p> -->
+              </div>
+            </div>
+            <div class="row">
+              <div class="footer-copyright text-center col-sm-12 col-md-6 text-md-left border-top pt-3">
+                <a>Copyright &copy; 2019 truGeny, Inc. </a>
+              </div>
+            
+              <div class=" text-center col-sm-12 col-md-6  text-md-right border-top  footer-legal-links">
+                <ul>
+                  <li>
+                    <a class="legalLinkBtn  d-none" id="signin" href="termsofservices.html">Terms of Service</a>
+                    <!-- <span>|</span> -->
+                    <a class="legalLinkBtn  d-none" id="register" href="privacy_policy.html">Privacy Policy</a>
+                  </li>
+                </ul>
+              </div>
+              <!-- end of signin-register-->
+            </div>
+            </footer>
+            <!-- end of footer -->
+
+
+
+
+          <div class="modal fade bd-example-modal-lg" id="exampleModalCenter" tabindex="-1"  role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true" >
+            <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+              <div class="modal-content" style="border-radius:40px;">
+
+                <div class="modal-header bg-blue clearfix border-0" style="border-top-right-radius: 40px;    border-top-left-radius: 40px;">
+
+                  <h5 class="modal-title" id="exampleModalLongTitle" style="padding-top:5px;padding-bottom:25px;color: #2c333c;font-size: 30px;font-weight: 700;">
+                    Start your journey in 3 easy steps</h5>
+
+                    <button type="button" class="text-center close" data-dismiss="modal" aria-label="Close" style="padding-top:25px;padding-bottom:25px;" >
+                    <img class="img-fluid" src=".\img\registration\X.png"/>
+                  </button>
+
+                <!-- <p class="float-left">Question 1 of 3</p> -->
+        </div>
+
+        <div class="bg-blue border-bottom-1">
+          <p class="pl-3">Question 1 of 3</p>
+        </div>
+
+        <div class="modal-body pb-5 pt-0 m-0">
+
+                  <div class="container ">
+                    <br>
+                    <div class="tab-content">
+                    <div id="home" class="container tab-pane active"><br>
+                      <h3>How do you indentify your gender?</h3>          <hr>
+                    <div class="d-flex d-flex-inline">
+                        <img  class="mr-3" src="./img/q&a/female.png" alt="" />
+                        <img class="mr-3" src="./img/q&a/female.png" alt="" />
+                  </div>
+                    <div class="float-right pt-2 mt-2">
+                      <button type="button" class="btn btn-outline-primary text-center custom-button btn btn-outline-primary btn-hover-white my-2 my-sm-0"  data-toggle="pill" href="#menu1">Next</button>
+                    </div>
+                  </div>
+
+
+              <div id="menu1" class=" m-0 p-0 container tab-pane fade"><br>
+                <h3>Does anyone in your family have 2 diabetes?</h3><hr>
+                <h4>Certain ethnic groups have higher risk for diabetes,<br>
+                even at lower body weights.</h4>
+                <div class="col-xs-12 mt-2 ">
+                  <div class="input-group-prepend " style="border:solid 1px #ebebeb;max-width:312px">
+                    <input type="text" placeholder="Select your ethnicity" class="form-control roboto-reg-16px" style="border:none;height:60px;" aria-label="Text input with dropdown button" >
+                    <button class="m-0 p-0 btn btn-outline-secondary roboto-bold-14px " href="#"  style="border:none;background-color:white;" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img class="m-0 p-0" src="img/q&a/carot.png"/></button>
+                  </div>
+                </div>
+                 <div class="float-right pt-2 mt-2">
+                <button type="button" class="btn btn-outline-primary text-center custom-button btn btn-outline-primary btn-hover-white my-2 my-sm-0"  data-toggle="pill" href="#menu2">Next</button>
+              </div>
+              </div>
+
+
+              <div id="menu2" class=" m-0 p-0 container tab-pane fade"><br>
+                <h3>Does anyone in your family have 2 diabetes?</h3>
+                <hr>
+                <div class="radio">
+              <label><input type="radio" name="optradio" checked>  Parents</label>
+            </div>
+            <div class="radio">
+              <label><input type="radio" name="optradio">  Siblings</label>
+            </div>
+                <div class="float-right pt-2 mt-2">
+                <button type="button" class="btn btn-outline-primary text-center custom-button btn btn-outline-primary btn-hover-white my-2 my-sm-0" style="height:60px;width:210px;border-radius:30px;color:white;background:#4f5be7" data-toggle="pill" onclick="window.location.href = 'thankyou2.html';" href="#">Submit</button>
+              </div>
+
+              </div>
+            </div>
+          </div>
+
+          </div>
+
+
+
+
+              <!-- sticky form---------------- -->
+
+
+
+                <!-- <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary"  data-toggle="pill" href="#menu2">Close</button>
+                  <button type="button" class="btn btn-primary"  data-toggle="pill" href="#menu1">Next</button>
+                </div> -->
+              </div>
+            </div>
+          </div>
+
+
+
+
+              <!-- sticky form---------------- -->
+
+              <div class="row ">
+
+                <div class="nb-form">
+                <!-- <p class="title d-none d-lg-block ">May I Help You</p> -->
+
+                <img src="https://www.growyourbrand.com/wp-content/uploads/2018/11/chat.gif" alt="" class="user-icon img-fluid">
+
+                <form>
+                  <input type="text" name="cpname" placeholder="Name:" required>
+                  <input type="email" name="cpemail" placeholder="Email:" required>
+                  <input type="tel" name="cpphone" placeholder="Phone:" required>
+                  <textarea name="cpmessage" placeholder="Message:" required></textarea>
+                  <input type="submit" value="Send message" style="background:#4f5be7">
+                </form>
+              </div>
+              </div>
+
+              <!-- --------eo sticky form----------------- -->
+              <div class="fixed-bottom bg-white stickme">
+                  <div class="container">
+                
+                <div class="row py-2">
+                
+                  <div class="col-1 p-0 m-0">
+                    <!-- <i style="color:#4f5be7"class="fas fa-home fa-2x"></i> -->
+                  </div>
+                  <div class="col-2 ">
+                    <!-- <i class="fas fa-home fa-2x"></i>
+                   -->
+                   <img style="color:black" src="house.svg" class="img-fluid"/>
+                  </div>
+                  <div class="col-2">
+                    <!-- <i class="fas fa-mobile-alt fa-2x"></i> -->
+                    <img src="smartphone.svg" class="img-fluid"/>
+                
+                
+                  </div>
+                  <div class="col-2">
+                    <img style="color:black" src="envelope.svg" class="img-fluid"/>
+                  </div>
+                  <div class="col-2">
+                    <img style="color:black" src="share1.svg" class="img-fluid"/>
+                
+                  </div>
+                  <div class="col-2">
+                    <img style="color:black" src="chat.svg" class="img-fluid"/>
+                
+                  </div>
+                  <div class="col-1">
+                    <!-- <i style="color:#4f5be7"class="fas fa-home fa-2x"></i> -->
+                  </div>
+                </div>
+                
+                </div>
+                </div>
+
+            <!-- Optional JavaScript -->
+            <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+            <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+            <script src="./js/main.js"></script>
+            <script src="./js/index.js"></script>
+
+            <div class="fixed-bottom bg-white stickme">
+                <div class="container">
+              
+              <div class="row py-2">
+              
+                <div class="col-1 p-0 m-0">
+                  <!-- <i style="color:#4f5be7"class="fas fa-home fa-2x"></i> -->
+                </div>
+                <div class="col-2 ">
+                  <!-- <i class="fas fa-home fa-2x"></i>
+                 -->
+                 <img style="color:black" src="./img/icons/house.svg" class="img-fluid"/>
+                </div>
+                <div class="col-2">
+                  <!-- <i class="fas fa-mobile-alt fa-2x"></i> -->
+                  <img src="./img/icons/smartphone.svg" class="img-fluid"/>
+              
+              
+                </div>
+                <div class="col-2">
+                  <img style="color:black" src="./img/icons/envelope.svg" class="img-fluid"/>
+                </div>
+                <div class="col-2">
+                  <img style="color:black" src="./img/icons/share1.svg" class="img-fluid"/>
+              
+                </div>
+                <div class="col-2">
+                  <img style="color:black" src="./img/icons/chat.svg" class="img-fluid"/>
+              
+                </div>
+                <div class="col-1">
+                  <!-- <i style="color:#4f5be7"class="fas fa-home fa-2x"></i> -->
+                </div>
+              </div>
+              
+              </div>
+              </div>
+
+          </body>
+        </html>

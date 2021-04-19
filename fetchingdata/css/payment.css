@@ -1,0 +1,92 @@
+body {
+/* font-family: 'Roboto', sans-serif !important; */
+font-family: 'roboto',sans-serif;
+color:#2c333c;
+}
+h1,h2,h3,h4,h5,h6,p,a{
+  font-family: 'roboto',sans-serif;
+}
+input[type="text"] {
+  font-family:'Roboto', sans-serif;
+  font-size: 16px;
+  color:#84888e;
+}
+
+.custom-radio .custom-control-input:checked~.custom-control-label::before,
+.custom-radio .custom-control-input:checked~.custom-control-label::after {
+    background-color: greenyellow;  /* green */
+    /* this bg image SVG is just a white circle, you can replace it with any valid SVG code */
+   /* background-image: url(data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3E%3Ccircle r='3' fill='%23fff'/%3E%3C/svg%3E); 
+    border-radius: 50%;*/
+}
+
+.ritesh{
+  background-color: orange;
+  height:20px;
+  width:200px;
+  margin: 0 auto;
+  text-align: center; 
+}
+.custom-radio-btn{
+  border:solid 3px orange!important;
+}
+.c1{
+  padding:0px;
+  box-shadow: 0 17px 30px rgba(92, 103, 108, 0.2);
+  border-radius: 2rem;
+
+  /* border:1px solid blue ; */
+
+}
+
+.c2{
+    border-bottom-left-radius: 40px;
+        border-bottom-right-radius: 2rem;
+        box-shadow: 0 17px 40px rgba(92, 103, 108, 0.2);
+
+
+  /* border:1px solid blue ; */
+
+}
+.line-span{
+width:200px;
+height:2px;
+display:inline-block;
+background-color: #c8daec;
+}
+.or{
+display:inline-block;
+color: #2c333c;
+}
+.b1-cr{
+  background: #eff7ff;
+}
+.cr-1{
+color:#4f5be7;
+
+}
+.plus-button{
+  width: 42px;
+  height: 42px;
+}
+.sec-1 .logo-create-page {
+padding-top:7rem;
+padding-bottom:7rem;
+padding-top:
+}
+.head-text-h1 {
+color: #2c333c;
+font-family: 'roboto',sans-serif;
+font-size: 36px;
+font-weight: 900;
+padding-top: 3.5rem;
+}
+.sec1 .para{
+  color: #4f5be7;
+  padding-top:10px;
+    padding-bottom:44px;
+  font-family: 'roboto',sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  text-decoration: underline;
+}
